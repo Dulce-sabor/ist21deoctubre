@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DULCE SABOR- Paletas de Sabores</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Fredoka:wght@500&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Fredoka', sans-serif;
+      background: linear-gradient(135deg, #ffe2ec, #fff7d6);
+      color: #333;
+    }
+
+    header {
+      background: #ff6f91;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem 2rem;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 4rem;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 0.8rem;
+      font-style: italic;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #d94f70;
+      margin-top: 3rem;
+      font-family: 'Pacifico', cursive;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+      transition: transform 0.3s;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card .title-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.5rem;
+      color: #ff6f61;
+    }
+
+    .card .content {
+      display: none;
+      text-align: left;
+      margin-top: 0.8rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .card.active .content {
+      display: block;
+    }
+
+    .info-section p {
+      font-size: 1.2rem;
+    }
+
+    .location {
+      background-color: #ffe4f0;
+      padding: 2rem;
+      border-radius: 15px;
+      margin: 2rem auto;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .location h2 {
+      color: #ff5e7d;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .social {
+      background: #fcd9e1;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .social h2 {
+      font-size: 1.8rem;
+      color: #d94f70;
+      margin-bottom: 1rem;
+    }
+
+    .social a {
+      color: #d94f70;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #ffb6c1;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 900px) {
+      .menu {
+        justify-content: center;
+      }
+      .card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="C:\Users\Cristofer Martinez\Desktop\empresa/dulce.jpg" alt="Logo Dulce Sabor" />
+    <h1>DULCE SABOR</h1>
+    <p>Frescura en cada paleta</p>
+  </header>
+
+  <section class="info-section">
+    <h2 class="section-title">🍧 Nuestro Menú de Paletas</h2>
+    <div class="menu">
+      <div class="card" tabindex="0">
+        <img
+          src="C:\Users\Cristofer Martinez\Desktop\empresa/COCO.jpg"
+          alt="COCO"
+          style="width: 80px; height: 80px; margin-bottom: 1rem"
+        />
+        <h3>COCO</h3>
+        <p>Hecha a base de coco rayado con leche, que da deleita el paladar con un delicioso sabor.</p>
+      </div>
+      <div class="card" tabindex="0">
+        <img
+          src="C:\Users\Cristofer Martinez\Desktop\empresa/mango.jpg"
+          alt="Mango"
+          style="width: 80px; height: 80px; margin-bottom: 1rem"
+        />
+        <h3>Mango Chamoy</h3>
+        <p>La mezcla perfecta entre dulce y picosito.</p>
+      </div>
+      <div class="card" tabindex="0">
+<img src="C:\Users\Cristofer Martinez\Desktop\empresa/nance.jpg" alt="Paleta de nance" width="100">
+        <h3>NANCE</h3>
+        <p>Rica paleta refrescante con un dulce sabor a nance.</p>
+      </div>
+      <div class="card" tabindex="0">
+<img src="C:\Users\Cristofer Martinez\Desktop\empresa/oreo.jpg" alt="Paleta de Oreo" width="100">
+        <h3>OREO</h3>
+        <p>Con trocitos de galleta y leche.</p>
+      </div>
+      <div class="card" tabindex="0">
+<img src="C:\Users\Cristofer Martinez\Desktop\empresa/mora.jpg" alt="Paleta de mora" width="100">
+      
+        
+        <h3>MORA</h3>
+        <p>Delicioso sabor a mora fresca y helada</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="info-section">
+    <div class="menu">
+      <div class="card" tabindex="0">
+        <div class="title-icon">🎯</div>
+        <h3>Misión</h3>
+        <div class="content">
+          <p>
+            En Dulce Sabor nos dedicamos a crear paletas heladas elaboradas
+            con ingredientes naturales y sabores únicos, ofreciendo una
+            experiencia refrescante y deliciosa para el público en general.
+            Nuestro compromiso es brindar frescura, calidad y alegría en cada
+            paleta, cuidando cada detalle desde la preparación hasta el
+            disfrute.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" tabindex="0">
+        <div class="title-icon">👁️</div>
+        <h3>Visión</h3>
+        <div class="content">
+          <p>
+            Buscamos ser una empresa reconocida por la excelencia y
+            originalidad de nuestras paletas heladas, expandiendo nuestra
+            presencia a través de nuevos puntos de venta y llevando la frescura
+            de Dulce Sabor a cada rincón del país.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" tabindex="0">
+        <div class="title-icon">🎯</div>
+        <h3>Objetivo General</h3>
+        <div class="content">
+          <p>
+            Ofrecer momentos de frescura y alegría con paletas naturales,
+            conectando con las personas y construyendo una marca cercana,
+            auténtica y de confianza.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu">
+      <div class="card" tabindex="0">
+        <div class="title-icon">⏳</div>
+        <h3>Objetivos a Largo Plazo</h3>
+        <div class="content">
+          <ul>
+            <li>Expandir nuestra empresa a distintos lugares.</li>
+            <li>Reconocimiento por parte de consumidores.</li>
+            <li>Introducir productos nuevos.</li>
+            <li>Crear oportunidades laborales.</li>
+            <li>Implementar un sistema de producción más eficiente.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card" tabindex="0">
+        <div class="title-icon">⚡</div>
+        <h3>Objetivos a Corto Plazo</h3>
+        <div class="content">
+          <ul>
+            <li>Implementar estrategias de publicidad.</li>
+            <li>Establecer clientela inicial.</li>
+            <li>Especializarnos en la calidad de productos y servicios.</li>
+            <li>Desarrollar un control básico de costos y ganancias.</li>
+            <li>Desarrollar un menú inicial.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="location">
+    <h2>📍 PUNTO DE VENTA</h2>
+    <p>
+      Instituto 21 de Octubre<br />
+      ¡Ven por tu paleta favorita durante los recreos!
+    </p>
+  </section>
+
+  <section class="social">
+  <h2>📱 Síguenos en Redes Sociales</h2>
+  <p>
+    Instagram:
+    <a href="https://www.instagram.com/dulcesabor_21octubre" target="_blank">@dulcesabor_21</a>
+  </p>
+  <p>
+    TikTok:
+    <a href="https://www.tiktok.com/@dulce.sabor56?is_from_webapp=1&sender_device=pc" target="_blank">@dulce.sabor56</a>
+  </p>
+  <p>
+    Facebook:
+    <a href="https://www.facebook.com/share/1YhQ1EMqHL/?mibextid=qi2Omg" target="_blank">Dulce Sabor HN</a>
+  </p>
+  <p style="margin-top: 2rem;">
+    <a
+      href="https://wa.me/50492815074?text=Hola%20quiero%20hacer%20un%20pedido%20de%20paletas%20heladas"
+      target="_blank"
+      style="
+        display: inline-block;
+        background-color: #25D366;
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.2rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: background-color 0.3s;
+      "
+      onmouseover="this.style.backgroundColor='#1EBE5B'"
+      onmouseout="this.style.backgroundColor='#25D366'"
+    >
+      📦 Hacer Pedido por WhatsApp
+    </a>
+  </p>
+</section>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Dulce Sabor · Todos los derechos reservados
+  </footer>
+
+  <script>
+    // Script para toggle de contenido en cards con click o teclado (accesibilidad)
+    const cards = document.querySelectorAll('.card[tabindex]');
+
+    cards.forEach((card) => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('active');
+      });
+      card.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          card.classList.toggle('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
